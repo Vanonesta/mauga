@@ -1,0 +1,37 @@
+<div class="container">
+  <h1 class="title">Aku punya sesuatu yang spesial untukmu...</h1>
+  <button class="btn start-btn" onclick="start()">Mulai</button>
+
+  <div id="gombalan" class="hidden">
+    <h2 class="gombal-text fade-in">
+      "Aku nggak bisa kasih kamu bulan atau bintang,  
+      tapi aku bisa kasih sesuatu yang lebih besar... <span style="color:#ff4a4a;">hatiku ❤️</span>."
+    </h2>
+    <button class="btn next-btn" onclick="showQuestion()">Lanjutkan</button>
+  </div>
+
+  <div id="question" class="hidden">
+    <h2 class="question-text fade-in">
+      Maukah kamu menjadi alasan senyumku setiap hari?  
+      <span style="font-size: 1.5rem; color: #ff9a8b;">😊</span>
+    </h2>
+    <div class="buttons">
+      <button class="answer yes fade-in" onclick="showResponse('yes')">Ya</button>
+      <button class="answer no fade-in" onclick="showResponse('no')">Tidak</button>
+    </div>
+  </div>
+
+  <div id="response-container" class="hidden">
+    <h2 id="response" class="fade-in"></h2>
+    <button class="btn reset-btn" onclick="reset()">Ulangi</button>
+  </div>
+</div>
+
+!-- Musik Latar -->
+  <audio id="background-music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
